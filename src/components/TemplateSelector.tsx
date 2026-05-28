@@ -43,14 +43,14 @@ function TemplatePreview({ template }: { template: TemplateConfig }) {
 
 export default function TemplateSelector({ templates, onSelect }: TemplateSelectorProps) {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
       {templates.map(template => (
         <button
           key={template.id}
           onClick={() => onSelect(template.id)}
           className="bg-white rounded-xl border border-gray-200 p-4 text-left hover:border-purple-300 hover:shadow-lg transition-all group"
         >
-          <div className="flex justify-center mb-4">
+          <div className="flex justify-center items-center mb-4" style={{ height: 280 }}>
             <TemplatePreview template={template} />
           </div>
           <h3 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors">
