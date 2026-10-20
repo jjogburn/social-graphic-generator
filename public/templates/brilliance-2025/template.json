@@ -1,0 +1,77 @@
+{
+  "id": "brilliance-2025",
+  "name": "Brilliance 2025",
+  "description": "Speaker card for Culture of Brilliance — dark background with gradient accents",
+  "category": "Conference",
+  "fields": [
+    { "id": "headshot", "label": "Headshot", "type": "image", "perEntry": true, "required": true },
+    { "id": "name", "label": "Name", "type": "text", "placeholder": "Dr. Jane Smith", "perEntry": true, "required": true },
+    { "id": "title", "label": "Title / Role", "type": "textarea", "placeholder": "Vice President of Emergency Medicine\nat Vituity", "perEntry": true },
+    { "id": "eventName", "label": "Event Name", "type": "text", "perEntry": false, "defaultValue": "BRILLIANCE 2025" },
+    { "id": "eventSubtitle", "label": "Event Subtitle", "type": "text", "perEntry": false, "defaultValue": "Celebrating Women Disrupting Healthcare" },
+    { "id": "eventDetails", "label": "Event Details", "type": "text", "perEntry": false, "defaultValue": "November 13th · Chicago, IL" },
+    { "id": "topLine", "label": "Top Line Text", "type": "text", "perEntry": false, "defaultValue": "I WILL BE SPEAKING AT" }
+  ],
+  "sizes": [
+    {
+      "id": "square",
+      "label": "Square (1080×1080)",
+      "width": 1080,
+      "height": 1080,
+      "background": "square/background.svg",
+      "layers": [
+        { "type": "text", "field": "topLine", "x": 55, "y": 210, "width": 760, "height": 24,
+          "style": { "family": "var(--font-source-sans), system-ui, sans-serif", "size": 17, "weight": 600, "color": "#C8C0D4", "letterSpacing": "0.35em", "transform": "uppercase" },
+          "maxLines": 1 },
+        { "type": "text", "field": "eventName", "x": 55, "y": 236, "width": 970, "height": 100,
+          "style": { "family": "var(--font-source-sans), system-ui, sans-serif", "size": 100, "weight": 700, "lineHeight": 0.88, "letterSpacing": "0.02em", "transform": "uppercase",
+                     "color": "linear-gradient(to right, #F07A2D, #E83E75, #8B3FA0)" },
+          "maxLines": 1, "minSize": 60 },
+        { "type": "image", "field": "headshot", "x": 69, "y": 389, "width": 320, "height": 320, "shape": "circle",
+          "placeholder": { "color": "#1A1230", "text": "Upload Photo", "textColor": "#6B5F80" } },
+        { "type": "text", "field": "eventSubtitle", "x": 448, "y": 462, "width": 577, "height": 82,
+          "style": { "family": "var(--font-source-sans), system-ui, sans-serif", "size": 30, "weight": 600, "color": "#C8C0D4", "lineHeight": 1.35, "letterSpacing": "0.1em", "transform": "uppercase" },
+          "verticalAlign": "bottom", "maxLines": 2, "minSize": 22 },
+        { "type": "text", "field": "eventDetails", "x": 448, "y": 575, "width": 577, "height": 46,
+          "style": { "family": "var(--font-source-sans), system-ui, sans-serif", "size": 34, "color": "#FFFFFF" },
+          "maxLines": 1, "minSize": 24 },
+        { "type": "text", "field": "name", "x": 35, "y": 741, "width": 388, "height": 48, "fallback": "Speaker Name",
+          "style": { "family": "var(--font-source-sans), system-ui, sans-serif", "size": 40, "weight": 700, "color": "#FFFFFF", "lineHeight": 1.1 },
+          "align": "center", "maxLines": 1, "minSize": 22 },
+        { "type": "text", "field": "title", "x": 35, "y": 793, "width": 388, "height": 130,
+          "style": { "family": "var(--font-source-sans), system-ui, sans-serif", "size": 30, "color": "#C8C0D4", "lineHeight": 1.4 },
+          "align": "center", "maxLines": 3, "minSize": 20 }
+      ]
+    },
+    {
+      "id": "landscape",
+      "label": "Landscape (1200×630)",
+      "width": 1200,
+      "height": 630,
+      "background": "landscape/background.svg",
+      "layers": [
+        { "type": "text", "field": "topLine", "x": 45, "y": 28, "width": 700, "height": 16,
+          "style": { "family": "var(--font-source-sans), system-ui, sans-serif", "size": 11, "weight": 600, "color": "#C8C0D4", "letterSpacing": "0.35em", "transform": "uppercase" },
+          "maxLines": 1 },
+        { "type": "text", "field": "eventName", "x": 45, "y": 43, "width": 900, "height": 60,
+          "style": { "family": "var(--font-source-sans), system-ui, sans-serif", "size": 60, "weight": 700, "lineHeight": 0.88, "letterSpacing": "0.02em", "transform": "uppercase",
+                     "color": "linear-gradient(to right, #F07A2D, #E83E75, #8B3FA0)" },
+          "maxLines": 1, "minSize": 40 },
+        { "type": "image", "field": "headshot", "x": 55, "y": 398, "width": 190, "height": 190, "shape": "circle",
+          "placeholder": { "color": "#1A1230", "text": "Upload Photo", "textColor": "#6B5F80" } },
+        { "type": "text", "field": "name", "x": 283, "y": 446, "width": 440, "height": 36, "fallback": "Speaker Name",
+          "style": { "family": "var(--font-source-sans), system-ui, sans-serif", "size": 30, "weight": 700, "color": "#FFFFFF", "lineHeight": 1.1 },
+          "verticalAlign": "bottom", "maxLines": 1, "minSize": 20 },
+        { "type": "text", "field": "title", "x": 283, "y": 486, "width": 440, "height": 60,
+          "style": { "family": "var(--font-source-sans), system-ui, sans-serif", "size": 14, "color": "#C8C0D4", "lineHeight": 1.35 },
+          "maxLines": 3, "minSize": 11 },
+        { "type": "text", "field": "eventSubtitle", "x": 755, "y": 458, "width": 400, "height": 32,
+          "style": { "family": "var(--font-source-sans), system-ui, sans-serif", "size": 11, "weight": 600, "color": "#C8C0D4", "lineHeight": 1.35, "letterSpacing": "0.1em", "transform": "uppercase" },
+          "align": "right", "verticalAlign": "bottom", "maxLines": 2 },
+        { "type": "text", "field": "eventDetails", "x": 755, "y": 504, "width": 400, "height": 22,
+          "style": { "family": "var(--font-source-sans), system-ui, sans-serif", "size": 15, "color": "#FFFFFF" },
+          "align": "right", "maxLines": 1, "minSize": 11 }
+      ]
+    }
+  ]
+}
