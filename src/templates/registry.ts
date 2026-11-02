@@ -1,8 +1,13 @@
 import { TemplateConfig } from './types';
 import { empathSummitTemplate } from './empath-summit';
-import { brilliance2025Template } from './brilliance-2025';
+import { createLayeredTemplate } from './layered';
+import { LayeredTemplateSpec } from './layered/spec';
+import brilliance2025 from '../../public/templates/brilliance-2025/template.json';
+import empathSummit2027 from '../../public/templates/empath-summit-2027/template.json';
 
+// Designer templates live in public/templates/<id>/ — see the README there.
 export const templates: TemplateConfig[] = [
+  createLayeredTemplate(empathSummit2027 as LayeredTemplateSpec),
   empathSummitTemplate,
-  brilliance2025Template,
+  createLayeredTemplate(brilliance2025 as LayeredTemplateSpec),
 ];

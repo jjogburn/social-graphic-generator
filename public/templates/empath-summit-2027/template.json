@@ -1,0 +1,42 @@
+{
+  "id": "empath-summit-2027",
+  "name": "EmPATH Summit 2027",
+  "description": "Speaker card from the Canva EmPATH 2027 design — teal-to-indigo gradient with circular headshot",
+  "category": "Conference",
+  "fields": [
+    { "id": "headshot", "label": "Headshot", "type": "image", "perEntry": true, "required": true },
+    { "id": "name", "label": "Name", "type": "text", "placeholder": "Dr. Scott Zeller", "perEntry": true, "required": true },
+    { "id": "title", "label": "Title / Role", "type": "textarea", "placeholder": "Creator of the EmPATH Model\nVice President of Acute Psychiatry at Vituity", "perEntry": true },
+    { "id": "eventName", "label": "Event Name", "type": "text", "perEntry": false, "defaultValue": "EmPATH Summit 2027" },
+    { "id": "eventDetails", "label": "Event Details", "type": "text", "perEntry": false, "defaultValue": "May 25-26 in Minneapolis, MN" },
+    { "id": "topLine", "label": "Top Line Text", "type": "text", "perEntry": false, "defaultValue": "I will be speaking at" }
+  ],
+  "sizes": [
+    {
+      "id": "square",
+      "label": "Square (1080×1080)",
+      "width": 1080,
+      "height": 1080,
+      "background": "square/background.svg",
+      "layers": [
+        { "type": "text", "field": "topLine", "x": 218, "y": 123, "width": 647, "height": 48,
+          "style": { "family": "var(--font-open-sans), sans-serif", "size": 34.67, "weight": 700, "color": "#FFFFFF", "lineHeight": 1.385, "letterSpacing": "2.77px", "transform": "uppercase" },
+          "align": "center", "maxLines": 1, "minSize": 26 },
+        { "type": "text", "field": "eventName", "x": 102, "y": 181, "width": 897, "height": 77,
+          "style": { "family": "var(--font-open-sans), sans-serif", "size": 72, "weight": 700, "color": "#FFFFFF", "lineHeight": 1.07, "letterSpacing": "-2.88px" },
+          "align": "center", "verticalAlign": "middle", "maxLines": 1, "minSize": 50 },
+        { "type": "text", "field": "eventDetails", "x": 110, "y": 275, "width": 862, "height": 52,
+          "style": { "family": "var(--font-lato), sans-serif", "size": 37.33, "weight": 700, "color": "#FFFFFF", "lineHeight": 1.39 },
+          "align": "center", "maxLines": 1, "minSize": 26 },
+        { "type": "image", "field": "headshot", "x": 367, "y": 434, "width": 347, "height": 347, "shape": "circle",
+          "placeholder": { "color": "rgba(255,255,255,0.12)", "text": "Upload Photo", "textColor": "rgba(255,255,255,0.7)" } },
+        { "type": "text", "field": "name", "x": 109, "y": 823, "width": 863, "height": 66, "fallback": "Speaker Name",
+          "style": { "family": "var(--font-open-sans), sans-serif", "size": 58.67, "weight": 400, "color": "#FFFFFF", "lineHeight": 1.1, "letterSpacing": "-0.59px" },
+          "align": "center", "maxLines": 1, "minSize": 38 },
+        { "type": "text", "field": "title", "x": 108, "y": 906, "width": 864, "height": 110,
+          "style": { "family": "var(--font-open-sans), sans-serif", "size": 26.67, "weight": 500, "color": "#FFFFFF", "lineHeight": 1.2 },
+          "align": "center", "maxLines": 3, "minSize": 20 }
+      ]
+    }
+  ]
+}

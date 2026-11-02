@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <!-- Stand-in for designer art: everything static, with the photo, name and copy areas left empty -->
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F07A2D"/><stop offset="0.5" stop-color="#E83E75"/><stop offset="1" stop-color="#8B3FA0"/>
+    </linearGradient>
+    <linearGradient id="brandDiag" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F07A2D"/><stop offset="0.5" stop-color="#E83E75"/><stop offset="1" stop-color="#8B3FA0"/>
+    </linearGradient>
+    <linearGradient id="divider" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F07A2D"/><stop offset="1" stop-color="#E83E75"/>
+    </linearGradient>
+    <linearGradient id="diamond" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="rgb(240,122,45)" stop-opacity="0.55"/>
+      <stop offset="0.4" stop-color="rgb(232,62,117)" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="rgb(139,63,160)" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="stripe" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="rgb(139,63,160)" stop-opacity="0"/>
+      <stop offset="0.4" stop-color="rgb(139,63,160)" stop-opacity="0.08"/>
+      <stop offset="0.6" stop-color="rgb(232,62,117)" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="rgb(232,62,117)" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glowPurple">
+      <stop offset="0" stop-color="rgb(139,63,160)" stop-opacity="0.18"/><stop offset="0.65" stop-color="rgb(139,63,160)" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowOrange">
+      <stop offset="0" stop-color="rgb(240,122,45)" stop-opacity="0.12"/><stop offset="0.65" stop-color="rgb(240,122,45)" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="#0E0A1A"/>
+  <rect x="840" y="-200" width="320" height="900" fill="url(#stripe)" transform="rotate(15 1000 250)"/>
+  <rect x="880" y="140" width="90" height="90" rx="10.8" fill="url(#diamond)" stroke="rgba(232,62,117,0.4)" stroke-width="1.5" transform="rotate(45 925 185)"/>
+  <rect x="960" y="260" width="50" height="50" rx="6" fill="url(#diamond)" stroke="rgba(232,62,117,0.4)" stroke-width="1.5" transform="rotate(45 985 285)"/>
+  <rect x="850" y="55" width="35" height="35" rx="4.2" fill="url(#diamond)" stroke="rgba(232,62,117,0.4)" stroke-width="1.5" transform="rotate(45 867.5 72.5)"/>
+  <ellipse cx="891" cy="135" rx="243" ry="243" fill="url(#glowPurple)"/>
+  <ellipse cx="130" cy="810" rx="216" ry="216" fill="url(#glowOrange)"/>
+  <rect width="1080" height="6" fill="url(#brand)"/>
+  <rect y="1052" width="1080" height="28" fill="url(#brand)"/>
+  <!-- photo ring: the photo layer sits inside it -->
+  <circle cx="229" cy="549" r="174" fill="url(#brandDiag)"/>
+  <rect x="448" y="558" width="70" height="3" fill="url(#divider)"/>
+</svg>
