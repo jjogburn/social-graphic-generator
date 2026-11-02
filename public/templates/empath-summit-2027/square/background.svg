@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <!-- Rebuilt from the Canva design "empath-summit-2027" (speaker pages): gradient values and
+       positions copied from Canva. Replace with a Canva PNG export of a page with the
+       photo and text removed for a pixel-exact match. -->
+  <defs>
+    <radialGradient id="panel" gradientUnits="userSpaceOnUse" cx="29" cy="29" r="1446">
+      <stop offset="0" stop-color="#54c1ac"/>
+      <stop offset="0.333" stop-color="#5faddc"/>
+      <stop offset="0.667" stop-color="#4d60ac"/>
+      <stop offset="1" stop-color="#27305d"/>
+    </radialGradient>
+    <linearGradient id="disc" gradientUnits="userSpaceOnUse" x1="367" y1="0" x2="714" y2="0">
+      <stop offset="0" stop-color="#334189"/>
+      <stop offset="1" stop-color="#7d7aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="#FFFFFF"/>
+  <rect x="29" y="29" width="1023" height="1021" rx="14" fill="url(#panel)"/>
+  <!-- photo disc: the headshot layer is cropped to this circle -->
+  <circle cx="540.5" cy="607.5" r="173.5" fill="url(#disc)"/>
+</svg>
